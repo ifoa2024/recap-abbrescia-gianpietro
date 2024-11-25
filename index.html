@@ -94,3 +94,104 @@
 </body>
 </html> -->
 
+<!--9-->
+
+<!-- <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            width: 220px;
+            padding: 20px;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .card h3 {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .card .flag {
+            margin-top: 10px;
+        }
+
+        .flag-icon {
+            width: 40px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cards-container"></div>
+
+    <script>
+        let list = [
+            { firstName: 'Harry', country: 'Stati Uniti d\'America', flag: 'us', age: 19, language: 'Python' },
+            { firstName: 'Kseniya', country: 'Francia', flag: 'fr', age: 29, language: 'JavaScript' },
+            { firstName: 'Jing', country: 'Spagna', flag: 'es', age: 39, language: 'Ruby' },
+            { firstName: 'Noa', country: 'Inghilterra', flag: 'gb', age: 40, language: 'Ruby' },
+            { firstName: 'Andrei', country: 'Germania', flag: 'de', age: 59, language: 'C' },
+            { firstName: 'Maria', country: 'Colombia', flag: 'co', age: 60, language: 'C' },
+            { firstName: 'Lukas', country: 'Giappone', flag: 'jp', age: 75, language: 'Python' },
+            { firstName: 'Chloe', country: 'Svizzera', flag: 'ch', age: 88, language: 'Ruby' },
+            { firstName: 'Viktoria', country: 'Argentina', flag: 'ar', age: 98, language: 'PHP' },
+            { firstName: 'Piotr', country: 'Italia', flag: 'it', age: 48, language: 'JavaScript' }
+        ];
+
+      
+        function generateCards() {
+            const container = document.getElementById('cards-container');
+
+     
+            list.forEach(person => {
+              
+                const card = document.createElement('div');
+                card.classList.add('card'); 
+
+              
+                card.innerHTML = `
+                    <h3>${person.firstName}, ${person.age} anni</h3>
+                    <p>Skill: ${person.language}</p>
+                    <div class="flag">
+                        <i class="flag-icon flag-icon-${person.flag}"></i>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+       
+        generateCards();
+    </script>
+
+</body>
+</html> -->
