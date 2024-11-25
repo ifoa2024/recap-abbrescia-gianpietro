@@ -195,3 +195,84 @@
 
 </body>
 </html> -->
+
+
+<!--10-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar dinamica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+  
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="navbar"></ul>
+    </nav>
+    <script>
+     
+        const list = [
+            { id: 1, linkName: 'home', page: 'home.html', icon: 'bi bi-house-door' },
+            { id: 2, linkName: 'chi siamo', page: 'chi-siamo.html', icon: 'bi bi-people' },
+            { id: 3, linkName: 'servizi', page: 'servizi.html', icon: 'bi bi-bicycle' },
+            { id: 4, linkName: 'categorie', page: 'categorie.html', icon: 'bi bi-tag' },
+            { id: 5, linkName: 'blog', page: 'blog.html', icon: 'bi bi-newspaper' },
+            { id: 6, linkName: 'contatti', page: 'contatti.html', icon: 'bi bi-send' }
+        ];
+
+    
+        function createNavbar() {
+            const navbar = document.getElementById('navbar');
+
+        
+            list.forEach(link => {
+              
+                const li = document.createElement('li');
+
+                const a = document.createElement('a');
+                a.href = link.page;
+
+                const icon = document.createElement('i');
+                icon.setAttribute('class', link.icon);
+
+                a.appendChild(icon);
+                a.appendChild(document.createTextNode(link.linkName));
+
+                li.appendChild(a);
+
+                navbar.appendChild(li);
+            });
+        }
+
+        createNavbar();
+    </script>
+
+</body>
+</html> -->
