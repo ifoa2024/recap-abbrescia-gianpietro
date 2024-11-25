@@ -1,3 +1,4 @@
+//1
 // function dev(list, language, continent) {
 //     return list.filter(dev => dev.language === language && dev.continent === continent).length;
 //   }
@@ -26,7 +27,7 @@
   
 //   getUserInputAndCount();
   
-
+//2
 // function addSaluto(list) {
 //     return list.map(dev => {
 //       dev.saluto = `Ciao ${dev.firstName}, cosa ti piace di più di${dev.language}?`;
@@ -35,25 +36,48 @@
 //   }
   
 //   let list = [
-//     { firstName: 'Gianpietro', lastName: 'I.', country: 'Argentina', continent: 'Europe', age: 28, language: 'Java' },
-//     { firstName: 'Ruggero', lastName: 'X.', country: 'Croatia', continent: 'America', age: 28, language: 'Python' },
-//     { firstName: 'Sergio', lastName: 'U.', country: 'United States', continent: 'Europe', age: 28, language: 'Ruby' }
+//     { firstName: 'Gianpietro', lastName: 'A.', country: 'Italy', continent: 'Europe', age: 28, language: 'Java' },
+//     { firstName: 'Ruggero', lastName: 'V.', country: 'Michigan', continent: 'America', age: 28, language: 'Python' },
+//     { firstName: 'Sergio', lastName: 'B.', country: 'Italy', continent: 'Europe', age: 28, language: 'Ruby' }
 //   ];
   
 //   let updatedList = addSaluto(list);
   
 //   console.log(updatedList);
+//3
+// function occhiVerdi(list) {
 
-function occhiVerdi(list) {
+//     return list.some(person => person.eyes === 'Verde');
+//   }
 
-    return list.some(person => person.eyes === 'Verde');
+//   let list = [
+//     { firstName: 'Gianpietro', lastName: 'A.', country: 'Italy', continent: 'Europe', age: 28, eyes: 'Marroni' },
+//     { firstName: 'Ruggero', lastName: 'V.', country: 'Michigan', continent: 'America', age: 28, eyes: 'Neri' },
+//     { firstName: 'Sergio', lastName: 'S.', country: 'Italy', continent: 'Europe', age: 28, eyes: 'Verdi' }
+//   ];
+  
+//   console.log(occhiVerdi(list));  
+// 4
+
+function findDeveloperByLanguage(list, language) {
+
+    const developer = list.find(dev => dev.language === language);
+    
+    if (developer) {
+      return `${developer.firstName}, ${developer.country}`;
+    } else {
+      return `Non ci sono sviluppatori ${language}`;
+    }
   }
-
+  
   let list = [
-    { firstName: 'Gianpietro', lastName: 'Z.', country: 'Netherlands', continent: 'Europe', age: 29, eyes: 'Marroni' },
-    { firstName: 'Ruggero', lastName: 'B.', country: 'Poland', continent: 'Europe', age: 128, eyes: 'Neri' },
-    { firstName: 'Sergio', lastName: 'P.', country: 'Jamaica', continent: 'Americas', age: 42, eyes: 'Verdi' }
+    { firstName: 'Gianpietro', lastName: 'A.', country: 'Italy', continent: 'Europe', age: 28, language: 'Python' },
+    { firstName: 'Ruggero', lastName: 'V.', country: 'Michigan', continent: 'America', age: 28, language: 'Javascript' },
+    { firstName: 'Sergio', lastName: 'S.', country: 'Italy', continent: 'Europe', age: 28, language: 'Clojure' }
   ];
   
-  console.log(occhiVerdi(list));  
+  console.log(findDeveloperByLanguage(list, 'Python')); 
+  console.log(findDeveloperByLanguage(list, 'JavaScript'));
+  console.log(findDeveloperByLanguage(list, 'Ruby'));
+  
   
