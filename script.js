@@ -59,25 +59,48 @@
 //   console.log(occhiVerdi(list));  
 // 4
 
-function findDeveloperByLanguage(list, language) {
+// function findDeveloperByLanguage(list, language) {
 
-    const developer = list.find(dev => dev.language === language);
+//     const developer = list.find(dev => dev.language === language);
     
-    if (developer) {
-      return `${developer.firstName}, ${developer.country}`;
-    } else {
-      return `Non ci sono sviluppatori ${language}`;
-    }
-  }
+//     if (developer) {
+//       return `${developer.firstName}, ${developer.country}`;
+//     } else {
+//       return `Non ci sono sviluppatori ${language}`;
+//     }
+//   }
   
-  let list = [
-    { firstName: 'Gianpietro', lastName: 'A.', country: 'Italy', continent: 'Europe', age: 28, language: 'Python' },
-    { firstName: 'Ruggero', lastName: 'V.', country: 'Michigan', continent: 'America', age: 28, language: 'Javascript' },
-    { firstName: 'Sergio', lastName: 'S.', country: 'Italy', continent: 'Europe', age: 28, language: 'Clojure' }
-  ];
+//   let list = [
+//     { firstName: 'Gianpietro', lastName: 'A.', country: 'Italy', continent: 'Europe', age: 28, language: 'Python' },
+//     { firstName: 'Ruggero', lastName: 'V.', country: 'Michigan', continent: 'America', age: 28, language: 'Javascript' },
+//     { firstName: 'Sergio', lastName: 'S.', country: 'Italy', continent: 'Europe', age: 28, language: 'Clojure' }
+//   ];
   
-  console.log(findDeveloperByLanguage(list, 'Python')); 
-  console.log(findDeveloperByLanguage(list, 'JavaScript'));
-  console.log(findDeveloperByLanguage(list, 'Ruby'));
+//   console.log(findDeveloperByLanguage(list, 'Python')); 
+//   console.log(findDeveloperByLanguage(list, 'JavaScript'));
+//   console.log(findDeveloperByLanguage(list, 'Ruby'));
   
+//5
+
+// function checkUserSignUp(list) {
+    
+//     list.forEach(user => {
+
+//       if (user.logged === true) {
+//         alert(`${user.firstName} ${user.lastName} è stato registrato.`);
+//       } else {
+//         alert(`${user.firstName} ${user.lastName} non è registrato.`);
+//       }
+//     });
+//   }
   
+//   let list = [
+//     { firstName: 'Gianpietro', lastName: 'A.', country: 'Italy', continent: 'Europe', age: 28, language: 'true' },
+//     {firstName: 'Ruggero', lastName: 'V.', country: 'Michigan', continent: 'America', age: 28, language: 'false' },
+//     { firstName: 'Sergio', lastName: 'S.', country: 'Italy', continent: 'Europe', age: 28, language: 'true' }
+//   ];
+  
+//   checkUserSignUp(list);
+
+//6 
+
